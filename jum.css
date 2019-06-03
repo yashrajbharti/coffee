@@ -1,0 +1,265 @@
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  margin:0;
+  padding: 0;
+  background-image:url(./20190602_101616.png);
+  background-position: center;
+}
+/* GLOBAL */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.spinner-2:before{
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width:60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  z-index: 99;
+  border-top: #388a6b 3px solid;
+  border-bottom: #388a6b 3px solid;
+  animation: spinner 0.7s ease infinite;
+}
+
+@keyframes spinner{
+  to{
+    transform: rotate(360deg);
+  }
+}
+ul{
+  padding: 0;
+  margin: 0;
+
+}
+.button1{
+  height:38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid;
+  border-color: #388A6B;
+  color: #3b3b3b;
+  border-radius: 500px;
+  background: transparent;
+}
+button:hover{
+  background-color: #388A6B;
+}
+button:active{
+  background-color: #000;
+}
+.dark{
+padding-left: 15px;
+background-color: rgba(251, 247, 243,0.4);;
+color: #3b3b3b;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 10px;
+}
+/* header */
+header{
+  background-color: rgba(251, 247, 243,0.4);
+  color: #3b3b3b;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom:  3px solid;
+}
+header a{
+color: #3b3b3b;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+
+}
+
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0px 20px;
+
+}
+
+header #an{
+  float: left;
+}
+header #an h1{
+  margin:0;
+}
+
+header nav{
+float: right;
+margin-top: 10px;
+}
+header .current1 a{
+  color: #388A6B;
+  font-weight: bold;
+}
+header a:hover{
+  color:#728387;
+  font-weight: bold;
+}
+header a:active{
+  color:#000;
+}
+/* Showcase */
+#showcase{
+  min-height: 600px;
+  background: url(./quan-le-459857-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #000;
+  font-style: bold;
+  padding-bottom: 20px;
+}
+#showcase h1{
+  margin-top:500px;
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+#showcase p{
+  font-size: 20px;
+}
+/*starbucks*/
+#starbucks{
+  color: #3b3b3b;
+  text-align: center;
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+
+
+  /*newsletter*/
+
+#newsletter{
+  color: #3B3B3B;
+  padding: 15px;
+  background: rgba(251, 247, 243,0.4);
+  border: #ccc solid 1px;
+}
+#newsletter h1{
+
+  float: left;
+}
+#newsletter form{
+  float: right;
+  margin-top: 17px;
+}
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width:250px;
+  border-radius: 500px;
+  border: none;
+  text-align: center;
+}
+
+
+/*boxes*/
+#boxes{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(253,245,230,0.2);
+}
+#boxes .box{
+  float:left;
+  width:30%;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+#boxes .box img{
+  width: 300px;
+}
+/* Sidebar */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  background: rgba(253,245,230,0.4);
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding: 5px;
+}
+
+
+/*Article main-col*/
+article#main-col{
+  float: left;
+  width: 60%;
+}
+/*Services*/
+ul#Services li{
+  list-style: none;
+  padding: 20px;
+  border: #ccc solid 1px;
+  margin-bottom: 15px;
+  background: rgba(253,245,230,0.4);
+}
+
+
+footer{
+  padding: 30px;
+  margin-top: 0px;
+  color: #3b3b3b;
+  background-color: #388A6B;
+  text-align: center;
+}
+footer#home-footer {
+  margin-top: -43px;
+}
+/*Media Queries*/
+@media (max-width:768px){
+  header #an,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar
+  {
+    float: none;
+    text-align: center;
+    width: 100%;
+
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top: 340px;
+  }
+  #showcase{
+    background-image: url(./quan-le-459857-unsplash.jpg);
+  }
+  #newsletter button,.quote button{
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  aside#sidebar{
+    padding-left: 0px;
+  }
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="this is a web site ;p">
+    <meta name="keywords" content="web site ;p ;p">
+    <meta name="author" content="anjum ;p">
+    <title>Starbucks gallerina | ABOUT</title>
+    <link rel="stylesheet" type="text/css" href="./jum.css" >
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+          <div id="an">
+            <h1><img src="./j.png" alt="" width="90px" height="90px"></h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li class="current1"><a href="about.html">ABOUT</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to Starbucks and we'll mail you the best images</h1>
+        <form>
+          <input type="email" name="Subscribe" value="" placeholder="Enter your email">
+          <button type="submit" class="button1" name="button">SUBSCRIBE</button>
+        </form>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>We are the best online gallerina that contain over millions of Starbucks wallpapers and images, uploaded by people all over the world and we try to give you the best experience of Starbucks through this online gallerina. We always try our best to mail you on a regular basis the best images of coffee on earth so you can download and enjoy the best Starbucks pics on earth.</p>
+          <p class="dark">Art for Sale by Outstanding Artists Worldwide in our Online Art Gallery. Free Shipping. Art Advisory Service. Free Shipping Globally. Secure Payments. Collections. Recognized Artists. Free Returns. Original Artworks. Types: Abstraction, Fashion, Landscape, Coffee, Portrait, Still life..Find the perfect original paintings, fine art photographs and more from the largest selection of original art in our gallerina.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <aside id="sidebar">
+          <div class="dark">
+          <h3>What We Do</h3>
+          <p>Starbucks Corporation is an American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington in 1971. As of early 2019, the company operates over 30,000[5] locations worldwide.Starbucks is considered the main representative of "second wave coffee", initially distinguishing itself from other coffee-serving venues in the US by taste, quality, and customer experience while popularizing darkly roasted coffee.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consectetur.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <script>
+    document.querySelector('section#newsletter').style.display='none';
+    document.querySelector('section#main').style.display='none';
+
+    document.querySelector('*').classList.add('spinner-2');
+
+  setTimeout(() => {
+    document.querySelector('*').classList.remove('spinner-2');
+    document.querySelector('section#newsletter').style.display='block';
+    document.querySelector('section#main').style.display='block';
+
+   },3000);
+    </script>
+    <footer>
+      <p>Starbucks online Galleria, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>
