@@ -194,7 +194,7 @@ aside#sidebar{
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
-  background: rgba(253,245,230,0.4);
+  background: transparent;
 }
 aside#sidebar .quote input, aside#sidebar .quote textarea{
   width:90%;
