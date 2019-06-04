@@ -174,7 +174,7 @@ header a:active{
 #boxes{
   padding-top: 20px;
   padding-bottom: 20px;
-  background: rgba(253,245,230,0.2);
+  background: rgba(253,245,230,0.5);
 }
 #boxes .box{
   float:left;
