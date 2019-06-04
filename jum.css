@@ -117,6 +117,7 @@ header a:active{
 #showcase{
   min-height: 600px;
   background: url(./quan-le-459857-unsplash.jpg) no-repeat center;
+  background-attachment:fixed;
   background-size: cover;
   text-align: center;
   color: #000;
