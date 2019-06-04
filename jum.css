@@ -138,6 +138,7 @@ header a:active{
 /*starbucks*/
 #starbucks{
   color: #3b3b3b;
+  background: rgba(251, 247, 243,0.2);
   text-align: center;
   padding-top: 25px;
   text-transform: uppercase;
