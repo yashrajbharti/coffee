@@ -8,7 +8,8 @@ body {
   font-family: 'Roboto',sans-serif;
   background: rgba(251, 247, 243,0.4);
   line-height: 1.6;
-  background-image:url(./20190602_101616.png);
+  background-image:url(nolan-issac-38299-unsplash.jpg);
+  background-attachment: fixed;
   background-position: center;
 }
 .slider {
