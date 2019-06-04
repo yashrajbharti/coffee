@@ -55,6 +55,7 @@ ul{
   background: transparent;
 }
 button:hover{
+  color: white;
   background-color: #388A6B;
 }
 button:active{
