@@ -18,16 +18,32 @@
           <div id="an">
             <h1><a href="index.html"><img src="./j.png" alt="" width="90px" height="90px"></a></h1>
           </div>
-          <nav>
-            <ul>
+          <nav class="navbar">
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,14 25,14" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,23 20,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+              </a>
+            </span>
+              <ul class="navbar-nav">
               <li class="current1"><a href="index.html">HOME</a></li>
               <li><a href="about.html">ABOUT</a></li>
               <li><a href="services.html">SERVICES</a></li>
 
             </ul>
           </nav>
+          <div class="slide-nav" id="side-menu">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <a href="index.html">HOME</a>
+              <a href="about.html">ABOUT</a>
+              <a href="services.html">SERVICES</a>
+          </div>
       </div>
     </header>
+
     <section id="showcase">
       <div class="container">
         <h1>We provide you with the best availabe Starbucks images...</h1>
@@ -38,6 +54,7 @@
       <div class="container">
         <h1>Starbucks gallery</h1>
       </div>
+
     </section>
     <section id="boxes">
       <div class="container">
@@ -120,7 +137,18 @@
       <button type="button" id="prev" name="button"><i class="fas fa-arrow-left"></i></button>
       <button type="button" id="next" name="button"><i class="fas fa-arrow-right"></i></button>
     </div>
+    <script type="text/javascript">
+      function openSlideMenu(){
+      document.getElementById('side-menu').style.width='250px';
 
+    }
+
+    function closeSlideMenu(){
+    document.getElementById('side-menu').style.width='0px'
+
+  }
+
+    </script>
     <script src="main.js"></script>
 
     <footer id="home-footer">
