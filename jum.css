@@ -11,6 +11,20 @@ padding: 0;
 background-image:url(./nolan-issac-38299-unsplash.jpg);
 background-attachment: fixed;
 background-position: center;
+overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track-piece{
+  background-color: black;
+  opacity: 10%;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #00704a;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:rgba(17, 17, 17, 0.9);
 }
 @media(min-width:768px){
   .open-slide{display:none}
@@ -230,7 +244,7 @@ footer{
 padding: 30px;
 margin-top: 0px;
 color: #fff;
-background-color: #388A6B;
+background-color: #00704a;
 text-align: center;
 }
 footer#home-footer {
@@ -277,7 +291,7 @@ aside#sidebar{
   width:0;
 position: fixed;
   z-index: 1;
- top: 0;
+  top: 0;
   left: 0;
   background-color: #111;
   opacity: 0.9;
