@@ -29,6 +29,7 @@ body {
 }
 .slide.current {
 opacity: 1;
+overflow-x: hidden;
 }
 
 .slide .content {
@@ -53,11 +54,13 @@ opacity: 1;
   position: relative;
   top:-450px;
   margin-left: 20px;
+  overflow-x: hidden;
 }
 .buttons button#prev {
   position: relative;
   top:-450px;
   margin-left: 20px;
+  overflow-x: hidden;
 }
 .buttons button {
   border: 2px solid #fff;
