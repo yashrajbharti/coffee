@@ -8,6 +8,7 @@
     <meta name="author" content="anjum ;p">
     <title>Starbucks gallerina | ABOUT</title>
     <link rel="stylesheet" type="text/css" href="./jum.css" >
+    <link rel="stylesheet" href="modal-style.css">
   </head>
   <body>
     <header>
@@ -62,11 +63,38 @@
           <div class="dark">
           <h3>What We Do</h3>
           <p>Starbucks Corporation is an American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington in 1971. As of early 2019, the company operates over 30,000[5] locations worldwide.Starbucks is considered the main representative of "second wave coffee", initially distinguishing itself from other coffee-serving venues in the US by taste, quality, and customer experience while popularizing darkly roasted coffee.</p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consectetur.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
+          <button id="modalBtn" class="button0">LEARN MORE <span class="fastforward">&#xbb;</span></button>
         </aside>
       </div>
     </section>
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <span class="minBtn"><svg class="highlight" width="14"
+              height="10">
+              <path d="M0,5 30,5"/> </svg></span>
+            <h2>Starbucks</h2>
+          </div>
+          <div class="modal-body">
+          <p>Hello, so which coffee you want!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <h3>all rights reserved</h3>
+          </div>
+      </div>
+    </div>
+
+  <div class="mini" id="miniModal">
+    <div class="modal-header">
+      <span class="closeBtn2">&times;</span>
+      <span class="maxBtn">&#9744;</span>
+      <h2>Starbucks</h2>
+    </div>
+  </div>
     <script>
     document.querySelector('section#newsletter').style.display='none';
     document.querySelector('section#main').style.display='none';
@@ -90,6 +118,9 @@
     document.getElementById('side-menu').style.width='0px'
 
   }</script>
+  <script src="modal-main.js">
+
+  </script>
     <footer>
       <p>Starbucks online Galleria, Copyright &copy; 2019</p>
     </footer>
